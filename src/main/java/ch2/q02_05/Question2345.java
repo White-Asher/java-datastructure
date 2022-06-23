@@ -1,4 +1,4 @@
-package ch2.q2_5;
+package ch2.q02_05;
 
 import java.util.Arrays;
 import java.util.Scanner;

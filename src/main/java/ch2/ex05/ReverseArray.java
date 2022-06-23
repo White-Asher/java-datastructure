@@ -4,7 +4,7 @@ package ch2.ex05;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class ReverseArray {
+class ReverseArray {
     static void swap(int[] a, int idx1, int idx2){
         // 배열 요소 a[idx1]과 a[idx2]의 값을 바꿈
         int t = a[idx1];

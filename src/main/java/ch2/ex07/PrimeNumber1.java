@@ -1,7 +1,7 @@
 // 1000이하의 소수를 나열(버전1)
 package ch2.ex07;
 
-public class PrimeNumber1 {
+class PrimeNumber1 {
     public static void main(String[] args) {
         int counter = 0;
 

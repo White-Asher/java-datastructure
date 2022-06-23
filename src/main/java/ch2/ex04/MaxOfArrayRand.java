@@ -4,7 +4,7 @@ package ch2.ex04;
 import java.util.Scanner;
 import java.util.Random;
 
-public class MaxOfArrayRand {
+class MaxOfArrayRand {
     static int maxOf(int[] a) {
         int max = a[0];
         for (int i = 0; i < a.length; i++) {
