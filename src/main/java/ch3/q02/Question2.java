@@ -7,20 +7,29 @@ class Question2 {
         int i = 0;
 
         a[n] = key;
-        System.out.print(" | ");
-        for (int j = 0; j < a.length; j++) {
-            System.out.print(j +" ");
+        System.out.print("   | ");
+        for (int j = 0; j < n; j++) {
+            System.out.printf("%4d",j);
         }
-        System.out.println("");
-        System.out.println("-+------------");
 
-        for (i = 0; i <=n ; i++) {
-            System.out.println(" | ");
-            if(a[i] == key){
-                break;
-            }
+        System.out.println();
+        System.out.print("---+");
+        for (int k = 0; k < 4*n+2; k++) {
+            System.out.print("-");
         }
-        return i == n ? -1 : i;
+        System.out.println();
+
+        for (i = 0; i < n; i++) {
+            System.out.print("   |");
+            System.out.printf(String.format("%%%ds*\n", (i * 4) + 3), "");
+            System.out.printf("%3d|", i);
+            for (int k = 0; k < n; k++)
+                System.out.printf("%4d", a[k]);
+            System.out.println("\n   |");
+            if (a[i] == key)
+                return i;					// 검색 성공
+        }
+        return -1;
     }
 
     public static void main(String[] args) {
