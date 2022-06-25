@@ -1,6 +1,6 @@
 // 링버퍼로 큐 만들기
 
-package ch4.ex06;
+package ch4.ex03;
 
 public class IntQueue {
     private int[] que;  // 큐 배열
@@ -103,7 +103,7 @@ public class IntQueue {
     }
 
     // 큐 안의 모든 데이터를 프런트 > 리어 순서대로 출력
-    public void dup(){
+    public void dump(){
         if(num <= 0){
             System.out.println("큐가 비어있습니다.");
         }else{
